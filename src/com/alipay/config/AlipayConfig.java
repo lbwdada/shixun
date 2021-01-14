@@ -1,0 +1,24 @@
+﻿package com.alipay.config;
+
+public class AlipayConfig {
+	// 商户appid
+	public static String APPID = "2016102900775910";
+	// 私钥 pkcs8格式的
+	public static String RSA_PRIVATE_KEY = "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCU4I3PM8HwrgZv4rMClMZnUkOvJ+oqOgOqYzj+CIpzHHwrh3cXBl/fMhOoJXgPnMNInAOfTDQ5NjZwbThMvT9ZDUDC3d2xxJvbCFGZ72xOW7PAJ0ayejoVy7IOQT2BugYnGt+omm/COP+AZlQc4mlnLpSBdva5pc0RfWebkCUmhfL59V+OxzoecIAxv6+55Np7X/ssHpABhVoq4Tu0kYvOvSQ9kygwPs5ETwiw8h49PsMt8RsR1BL2V7jjNoTZSkourkfviEEjJjaauE6BUveZekkywt8h/w9JVUvRShF6TmQpT+g4cHRJZLi8dTXw/9EYGDP2OrLg8uzqeFqs6cOhAgMBAAECggEAds4X/JD2JKYLdv/3EIk/Jzar0rxMjvQK9s8FrRuNuLyzjl0lOReaLFge/aEhBXx5DpmJ/nZmen17xg4yznJ7egoscxVwlCssoQcrb2d0C7f8Ysw1C7qkXb5W0i9X8Q1NWamFcFwF8X1gz8tZNk+sA25VjlcsHwxj8KAdrTPDodArMfvhTbdzpd53w8S09jFDeTIOc2lAALl37X3Wtzo+u3Vp0/6u8Dau1s4kw5JGXc5ay+6YmxlodyxHFLwctkbzs6RQAWFIAwDBZ/DFjwTeapeyqTMy0MYLbn7/oJm2nOtviey5R/jDma9u6C3NOv6W9ePPJ7IjVoRz/e/ndMd/XQKBgQDcQjUyxTIrR96VcRgp8XdOcnwunmtwekJWprs4gXrnKGe6iWmDfWc+auIw/IIeiTQ0HONHfvnB0G3qFMo6W+9QvO+9CKSyM7fErMZoxMB/Axved14J8WBNMLhL2AQERJnZxOEhNxhQzp4ETK3lnr8Pd2QC7ArHPuwnXvRXeQAl8wKBgQCtCRRgSzsIk3M7g0tLKqdFCVFodu4Q3kCO5Qj1xv+vpm0KEcpYIfGzWZCT5FCLWHGan0T4WcriqWl4po2Hv3GHxDRJd81LVbtSpH7ftkPwhU31e/YONgte7VXIbtLgsnPLCHNm7dU3SYSxm/iv2g3M433PBC3/Hw8G4/Fv0CTxGwKBgGACQBwkVu0Ew+JSTN0jkwTP5I+RoHWD5VzOCrfjwMX4F9b4xNR7GkDb6ELAHpve5LF+khd9IrM3/mFVtJzhrBx+buXwWZIP9x+0zDuo39u9aC19zLD61SZwgTUWMRIHMST6q8OFt4Spu7lWD0sS+mdsfFzFtSEKrXev7UQfy0+/AoGAFvOuXTt9YBzW2x0GPrkwqMqcnsOvvlMMsyeUMa2suqrTqdNESL5v5f9KWyOcv28C2qSnrF2UuM4J7HQDL+9n6r9OxDP86jI7/7FMFvaBOoUkGxzPPYFTrsrCZyy0EhP5ogPD8vI3Jvc8f6aVrRW6YOQICw6d30pKXvqbSt6MF+MCgYEAoRHGk4/L9h9EnQtE+ZnkVcqNmJmfhpJMKp2uBnPcnVP4vbTjYa4uMxLqzjmFzYbk67I2FKQPbWuQYwZIw3OKY92Ft4V8gASbGE4pUfBBakKVoOAGfByDsTVGgUKN1X8HXwou6pf5Uw5wlb7D82f2awKYtKIKc8Fg6Wn8eavSXAg=";
+	// 服务器异步通知页面路径 需http://或者https://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
+	public static String notify_url = "http://www.baidu.com";
+	// 页面跳转同步通知页面路径 需http://或者https://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问 商户可以自定义同步跳转地址
+	public static String return_url = "http://www.baidu.com";
+	// 请求网关地址
+	public static String URL = "https://openapi.alipaydev.com/gateway.do";
+	// 编码
+	public static String CHARSET = "UTF-8";
+	// 返回格式
+	public static String FORMAT = "json";
+	// 支付宝公钥
+	public static String ALIPAY_PUBLIC_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApagcEkrhBNaVejQGtcsAbgxkSMzTmZyZF4WRGayYq1BDDMXhup/ImFpt5vE0DVmeoSUDWmHQwsyuCWvCewmC1QvQAYow0vT+jCVuH2LheuJuIyPN73WxWzeUKpPvh1Eq7TtpJskjysg6tNCo/MuEw3KGRBHHGM7noLED5+l3beLBgWbaDFf6U1WWidQyoAW+9gygw/lGxXLvtohzuy6M9fRm/y7mg9vYFGSWqPwIrF7R/DcXd0U6N9PRFfckK0blvwmqbubYSFFPpw4RKFmIeJBRXhkj7n6RilupuTRiGS065fvdW+OD48/3z9e5NFidCSKA7NCORid93fg9mE2ESQIDAQAB";
+	// 日志记录目录
+	public static String log_path = "/log";
+	// RSA2
+	public static String SIGNTYPE = "RSA2";
+}
